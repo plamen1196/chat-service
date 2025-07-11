@@ -1,6 +1,7 @@
 package com.chat.service.chat_service.service;
 
-import com.chat.service.chat_service.model.dto.*;
+import com.chat.service.chat_service.model.dto.ModifyUserDto;
+import com.chat.service.chat_service.model.dto.UserDto;
 
 import java.util.List;
 
@@ -12,10 +13,6 @@ public interface UserService {
     List<UserDto> getAllUsers();
 
     UserDto getUserById(Long id);
-
-    void register(RegisterUserDto user);
-
-    LoginResponseDto login(LoginUserDto user);
 
     UserDto modifyUser(Long id, ModifyUserDto user);
 
